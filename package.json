@@ -1,0 +1,15 @@
+{
+  "name": "claude-architecture-foundations",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An independent study guide to production architecture patterns for Claude-based systems.",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

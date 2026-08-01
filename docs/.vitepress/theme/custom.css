@@ -1,0 +1,126 @@
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-brand-soft: rgba(15, 118, 110, 0.14);
+
+  --vp-c-tip-1: #0f766e;
+  --vp-c-tip-2: #0d9488;
+  --vp-c-tip-3: #14b8a6;
+  --vp-c-tip-soft: rgba(15, 118, 110, 0.12);
+
+  --vp-home-hero-name-color: transparent;
+
+  --vp-home-hero-name-background:
+    linear-gradient(
+      120deg,
+      #0f766e 20%,
+      #4f46e5 75%
+    );
+
+  --vp-home-hero-image-background-image:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(20, 184, 166, 0.28),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 70% 60%,
+      rgba(79, 70, 229, 0.22),
+      transparent 48%
+    );
+
+  --vp-home-hero-image-filter: blur(42px);
+}
+
+.dark {
+  --vp-c-brand-1: #5eead4;
+  --vp-c-brand-2: #2dd4bf;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-brand-soft: rgba(45, 212, 191, 0.16);
+}
+
+.VPDoc h1 {
+  letter-spacing: -0.025em;
+}
+
+.VPDoc h2 {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 28px;
+  margin-top: 48px;
+}
+
+.VPDoc img.diagram {
+  display: block;
+  width: 100%;
+  max-width: 980px;
+  margin: 24px auto 32px;
+  padding: 8px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.principle-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  padding: 18px;
+  background:
+    linear-gradient(
+      145deg,
+      var(--vp-c-bg-soft),
+      var(--vp-c-bg)
+    );
+}
+
+.principle-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.principle-card p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+}
+
+.decision-banner {
+  border-left: 4px solid var(--vp-c-brand-1);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  background: var(--vp-c-brand-soft);
+  font-size: 1.02rem;
+}
+
+.small-note {
+  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+
+.badge-row span {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.82rem;
+  background: var(--vp-c-bg-soft);
+}
+
+@media (max-width: 720px) {
+  .principle-grid {
+    grid-template-columns: 1fr;
+  }
+}

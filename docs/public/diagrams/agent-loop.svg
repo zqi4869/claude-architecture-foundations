@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="t d">
+<title id="t">Client tool agent loop</title><desc id="d">Sequence diagram from application request to Claude tool use, tool execution, tool result, and terminal validation.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 20px Inter,Arial}.b{font:400 16px Inter,Arial;fill:#334155}.box{fill:white;stroke:#cbd5e1;stroke-width:2}.claude{fill:#eef2ff;stroke:#4f46e5;stroke-width:3}.app{fill:#ecfeff;stroke:#0f766e;stroke-width:3}.tool{fill:#fff7ed;stroke:#ea580c;stroke-width:3}</style></defs>
+<rect width="1200" height="640" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">The client-tool agent loop</text>
+<rect x="70" y="90" width="270" height="62" rx="15" class="app"/><text x="150" y="128" class="h" fill="#0f172a">Application</text>
+<rect x="465" y="90" width="270" height="62" rx="15" class="claude"/><text x="555" y="128" class="h" fill="#0f172a">Claude</text>
+<rect x="860" y="90" width="270" height="62" rx="15" class="tool"/><text x="940" y="128" class="h" fill="#0f172a">Tool / API</text>
+<path d="M205 152v400M600 152v400M995 152v400" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 8"/>
+<path d="M205 205h395" stroke="#0f766e" stroke-width="4"/><path d="m600 205-16-9v18z" fill="#0f766e"/><text x="285" y="194" class="b">messages + tool definitions</text>
+<path d="M600 275H205" stroke="#4f46e5" stroke-width="4"/><path d="m205 275 16-9v18z" fill="#4f46e5"/><text x="315" y="264" class="b">stop_reason: tool_use + typed arguments</text>
+<path d="M205 345h790" stroke="#ea580c" stroke-width="4"/><path d="m995 345-16-9v18z" fill="#ea580c"/><text x="390" y="334" class="b">application validates permissions and executes the operation</text>
+<path d="M995 415H205" stroke="#ea580c" stroke-width="4"/><path d="m205 415 16-9v18z" fill="#ea580c"/><text x="420" y="404" class="b">structured result or structured error</text>
+<path d="M205 480h395" stroke="#0f766e" stroke-width="4"/><path d="m600 480-16-9v18z" fill="#0f766e"/><text x="285" y="469" class="b">assistant turn + tool_result</text>
+<path d="M600 535H205" stroke="#4f46e5" stroke-width="4"/><path d="m205 535 16-9v18z" fill="#4f46e5"/><text x="315" y="524" class="b">next tool call or final answer</text>
+<rect x="70" y="570" width="1060" height="45" rx="12" fill="#ecfdf5" stroke="#10b981"/><text x="100" y="599" class="b">After every exit, application code validates the terminal state: completed, safely failed, or handed off.</text>
+</svg>

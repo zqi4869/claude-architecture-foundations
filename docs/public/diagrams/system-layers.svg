@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="t d">
+<title id="t">Layers of a Claude-based system</title><desc id="d">A layered architecture showing user experience, application orchestration, model reasoning, tools and data, and operational controls.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 22px Inter,Arial}.b{font:400 17px Inter,Arial;fill:#334155}.w{fill:white;stroke:#cbd5e1;stroke-width:2}.a{fill:#ecfeff;stroke:#0f766e;stroke-width:3}.p{fill:#eef2ff;stroke:#4f46e5;stroke-width:3}.g{fill:#f8fafc;stroke:#64748b;stroke-width:2}</style></defs>
+<rect width="1200" height="660" rx="28" fill="#f8fafc"/>
+<text x="60" y="58" class="t" fill="#0f172a">A production system is more than the model</text>
+<rect x="70" y="95" width="1060" height="78" rx="18" class="w"/><text x="105" y="130" class="h" fill="#0f172a">1. User experience</text><text x="370" y="130" class="b">Intent, consent, feedback, explanations, and escalation paths</text>
+<path d="M600 174v28" stroke="#94a3b8" stroke-width="4"/>
+<rect x="70" y="205" width="1060" height="92" rx="18" class="a"/><text x="105" y="242" class="h" fill="#0f172a">2. Application &amp; orchestration</text><text x="420" y="242" class="b">State, retries, permissions, terminal checks, audit, and routing</text><text x="105" y="274" class="b">This layer turns probabilistic model behavior into a bounded production workflow.</text>
+<rect x="70" y="329" width="510" height="102" rx="18" class="p"/><text x="105" y="367" class="h" fill="#0f172a">3. Claude</text><text x="105" y="399" class="b">Interpretation, planning, synthesis,</text><text x="105" y="423" class="b">and adaptive next-action selection</text>
+<rect x="620" y="329" width="510" height="102" rx="18" class="w"/><text x="655" y="367" class="h" fill="#0f172a">4. Tools &amp; MCP servers</text><text x="655" y="399" class="b">Typed operations, external systems,</text><text x="655" y="423" class="b">fresh data, and controlled side effects</text>
+<path d="M580 380h40" stroke="#0f766e" stroke-width="5"/><path d="M620 400h-40" stroke="#4f46e5" stroke-width="5"/>
+<rect x="70" y="468" width="1060" height="118" rx="18" class="g"/><text x="105" y="506" class="h" fill="#0f172a">5. Operational controls</text><text x="105" y="540" class="b">Authentication · authorization · observability · evaluation · privacy · incident recovery</text><text x="105" y="570" class="b">These controls span every layer rather than living in one isolated “safety prompt.”</text>
+<text x="70" y="625" class="b" fill="#0f766e">Design principle: assign each responsibility to the layer that can enforce it reliably.</text>
+</svg>

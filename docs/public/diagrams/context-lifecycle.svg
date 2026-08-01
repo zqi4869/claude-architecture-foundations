@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+<title id="t">Context and durable state lifecycle</title><desc id="d">A diagram separating active context, durable workflow state, source storage, and fresh tool retrieval.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 20px Inter,Arial}.b{font:400 16px Inter,Arial;fill:#334155}.ctx{fill:#eef2ff;stroke:#4f46e5;stroke-width:3}.state{fill:#ecfeff;stroke:#0f766e;stroke-width:3}.src{fill:white;stroke:#64748b;stroke-width:2.5}.fresh{fill:#fff7ed;stroke:#ea580c;stroke-width:2.5}</style></defs>
+<rect width="1200" height="700" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">Context is working memory—not your system of record</text>
+<rect x="80" y="115" width="440" height="190" rx="22" class="ctx"/><text x="135" y="157" class="h">Active model context</text><text x="120" y="198" class="b">Current request · recent turns · selected evidence</text><text x="120" y="230" class="b">compact summaries · relevant tool results</text><text x="120" y="267" class="b">Optimized for the next reasoning step</text>
+<rect x="680" y="115" width="440" height="190" rx="22" class="state"/><text x="735" y="157" class="h">Durable workflow state</text><text x="720" y="198" class="b">Stable IDs · completed steps · pending work</text><text x="720" y="230" class="b">approvals · failures · checkpoints · provenance</text><text x="720" y="267" class="b">Optimized for recovery and audit</text>
+<path d="M520 210h160" stroke="#0f766e" stroke-width="4"/><text x="548" y="198" class="b">read / update</text>
+<rect x="80" y="395" width="440" height="135" rx="20" class="src"/><text x="135" y="435" class="h">Source and transcript storage</text><text x="120" y="475" class="b">Original documents · raw events · full audit trail</text><text x="120" y="505" class="b">Retrieve only what the current step needs</text>
+<rect x="680" y="395" width="440" height="135" rx="20" class="fresh"/><text x="735" y="435" class="h">Fresh external state</text><text x="720" y="475" class="b">Current order status · latest file · live database value</text><text x="720" y="505" class="b">Re-fetch before making time-sensitive claims</text>
+<path d="M300 395V305M900 395V305" stroke="#64748b" stroke-width="4"/>
+<rect x="250" y="585" width="700" height="65" rx="15" fill="#fff" stroke="#cbd5e1" stroke-width="2"/><text x="290" y="625" class="b">Compaction reduces context pressure; it does not replace durable state or fresh retrieval.</text>
+</svg>

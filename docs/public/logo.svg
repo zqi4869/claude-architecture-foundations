@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Abstract architecture layers logo">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f766e"/><stop offset="1" stop-color="#4f46e5"/></linearGradient></defs>
+  <rect width="96" height="96" rx="24" fill="#f8fafc"/>
+  <path d="M48 13 78 30 48 47 18 30Z" fill="url(#g)"/>
+  <path d="M18 42 48 59 78 42v14L48 73 18 56Z" fill="#14b8a6" opacity=".9"/>
+  <path d="M18 62 48 79 78 62v10L48 89 18 72Z" fill="#4f46e5" opacity=".85"/>
+</svg>

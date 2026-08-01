@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 670" role="img" aria-labelledby="t d">
+<title id="t">Structured extraction pipeline</title><desc id="d">A pipeline from source document through semantic extraction, schema validation, repair, deterministic normalization, and human review.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 18px Inter,Arial}.b{font:400 15px Inter,Arial;fill:#334155}.n{fill:white;stroke:#4f46e5;stroke-width:2.5}.v{fill:#ecfeff;stroke:#0f766e;stroke-width:2.5}.e{fill:#fff7ed;stroke:#ea580c;stroke-width:2.5}.r{fill:#fef2f2;stroke:#dc2626;stroke-width:2.5}</style></defs>
+<rect width="1200" height="670" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">Separate semantic extraction from deterministic control</text>
+<rect x="55" y="130" width="185" height="100" rx="17" class="n"/><text x="96" y="170" class="h">Source</text><text x="83" y="202" class="b">document / image</text>
+<rect x="285" y="130" width="205" height="100" rx="17" class="n"/><text x="320" y="170" class="h">Claude extraction</text><text x="320" y="202" class="b">meaning + evidence</text>
+<rect x="540" y="130" width="205" height="100" rx="17" class="v"/><text x="580" y="170" class="h">Schema validation</text><text x="584" y="202" class="b">shape + types</text>
+<rect x="795" y="130" width="180" height="100" rx="17" class="v"/><text x="835" y="170" class="h">Normalize</text><text x="824" y="202" class="b">code + enums</text>
+<rect x="1020" y="130" width="125" height="100" rx="17" class="v"/><text x="1045" y="170" class="h">Persist</text><text x="1040" y="202" class="b">versioned data</text>
+<path d="M240 180h45M490 180h50M745 180h50M975 180h45" stroke="#64748b" stroke-width="4"/>
+<path d="M642 230v105" stroke="#ea580c" stroke-width="4"/>
+<rect x="505" y="335" width="275" height="100" rx="17" class="e"/><text x="550" y="374" class="h">Validation feedback</text><text x="540" y="406" class="b">exact field, expected type, received value</text>
+<path d="M505 385H390V230" stroke="#ea580c" stroke-width="4" fill="none"/><text x="258" y="370" class="b">bounded repair attempt</text>
+<path d="M642 435v85" stroke="#dc2626" stroke-width="4"/>
+<rect x="505" y="520" width="275" height="95" rx="17" class="r"/><text x="565" y="558" class="h">Human review</text><text x="542" y="588" class="b">ambiguity, conflict, or high impact</text>
+<text x="55" y="645" class="b" fill="#0f766e">Schema compliance guarantees parseability—not factual correctness, source fidelity, or business validity.</text>
+</svg>

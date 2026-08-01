@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="t d">
+<title id="t">Model and application responsibility boundary</title><desc id="d">Two-column comparison of semantic reasoning tasks and deterministic enforcement tasks.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 22px Inter,Arial}.b{font:400 17px Inter,Arial;fill:#334155}.l{font:600 17px Inter,Arial;fill:#0f172a}</style></defs>
+<rect width="1200" height="650" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">Place responsibility where it can be enforced</text>
+<rect x="65" y="95" width="510" height="480" rx="20" fill="#eef2ff" stroke="#4f46e5" stroke-width="3"/>
+<rect x="625" y="95" width="510" height="480" rx="20" fill="#ecfeff" stroke="#0f766e" stroke-width="3"/>
+<text x="100" y="140" class="h" fill="#312e81">Model reasoning</text><text x="660" y="140" class="h" fill="#115e59">Application enforcement</text>
+<g class="l"><text x="105" y="195">• Interpret ambiguous language</text><text x="105" y="240">• Select a useful investigation path</text><text x="105" y="285">• Synthesize evidence and trade-offs</text><text x="105" y="330">• Ask clarifying questions</text><text x="105" y="375">• Explain uncertainty</text><text x="105" y="420">• Draft a structured handoff summary</text><text x="105" y="465">• Adapt when tool results change</text></g>
+<g class="l"><text x="665" y="195">• Enforce permissions and deny rules</text><text x="665" y="240">• Validate JSON schemas and types</text><text x="665" y="285">• Guarantee terminal-state checks</text><text x="665" y="330">• Prevent duplicate side effects</text><text x="665" y="375">• Apply exact normalization rules</text><text x="665" y="420">• Persist durable workflow state</text><text x="665" y="465">• Bound retries, timeouts, and cost</text></g>
+<rect x="245" y="515" width="710" height="78" rx="16" fill="white" stroke="#cbd5e1" stroke-width="2"/><text x="280" y="548" class="h" fill="#0f172a">Shared zone</text><text x="280" y="577" class="b">Prompt guidance + typed contracts + runtime validation + human approval</text>
+<text x="65" y="625" class="b" fill="#0f766e">A prompt can guide behavior. Only the surrounding system can guarantee a hard boundary.</text>
+</svg>

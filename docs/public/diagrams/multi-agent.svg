@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" role="img" aria-labelledby="t d">
+<title id="t">Coordinator and specialist agents</title><desc id="d">A coordinator delegates bounded tasks to specialist agents and synthesizes structured summaries with provenance.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 20px Inter,Arial}.b{font:400 16px Inter,Arial;fill:#334155}.c{fill:#ecfeff;stroke:#0f766e;stroke-width:3}.s{fill:white;stroke:#4f46e5;stroke-width:2.5}.o{fill:#fff7ed;stroke:#ea580c;stroke-width:2.5}</style></defs>
+<rect width="1200" height="690" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">Coordinator–specialist architecture</text>
+<rect x="405" y="95" width="390" height="105" rx="20" class="c"/><text x="510" y="135" class="h">Coordinator</text><text x="455" y="169" class="b">decomposes, delegates, validates gaps</text>
+<rect x="70" y="300" width="280" height="125" rx="18" class="s"/><text x="145" y="340" class="h">Research agent</text><text x="105" y="374" class="b">Searches sources</text><text x="105" y="402" class="b">Returns claims + provenance</text>
+<rect x="460" y="300" width="280" height="125" rx="18" class="s"/><text x="535" y="340" class="h">Analysis agent</text><text x="495" y="374" class="b">Examines documents</text><text x="495" y="402" class="b">Flags gaps and conflicts</text>
+<rect x="850" y="300" width="280" height="125" rx="18" class="s"/><text x="925" y="340" class="h">Review agent</text><text x="885" y="374" class="b">Checks evidence</text><text x="885" y="402" class="b">Tests against criteria</text>
+<path d="M505 200 270 300M600 200v100M695 200l235 100" stroke="#0f766e" stroke-width="4" fill="none"/>
+<path d="M210 425 500 520M600 425v95M990 425 700 520" stroke="#4f46e5" stroke-width="4" fill="none"/>
+<rect x="360" y="520" width="480" height="102" rx="18" class="o"/><text x="470" y="560" class="h">Synthesis output</text><text x="405" y="592" class="b">Findings · uncertainty · citations · unresolved gaps</text>
+<text x="70" y="660" class="b" fill="#0f766e">Use isolated contexts for volume; use structured summaries to preserve fidelity.</text>
+</svg>

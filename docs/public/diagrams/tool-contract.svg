@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+<title id="t">Anatomy of a trustworthy tool contract</title><desc id="d">A tool contract card showing purpose, preconditions, input schema, provenance, side effects, output, and error semantics.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 20px Inter,Arial}.b{font:400 16px Inter,Arial;fill:#334155}.k{font:700 15px Inter,Arial;fill:#0f766e}.box{fill:white;stroke:#cbd5e1;stroke-width:2}</style></defs>
+<rect width="1200" height="700" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">Anatomy of a trustworthy tool contract</text>
+<rect x="75" y="95" width="1050" height="535" rx="22" fill="#fff" stroke="#0f766e" stroke-width="3"/>
+<text x="110" y="140" class="h" fill="#0f172a">approve_invoice</text><text x="330" y="140" class="b">A consequential operation with explicit boundaries</text>
+<g>
+<rect x="110" y="175" width="455" height="88" rx="14" class="box"/><text x="135" y="205" class="k">PURPOSE &amp; WHEN TO USE</text><text x="135" y="235" class="b">Approves an already-validated invoice.</text>
+<rect x="635" y="175" width="455" height="88" rx="14" class="box"/><text x="660" y="205" class="k">PRECONDITIONS</text><text x="660" y="235" class="b">Identity verified; policy checks completed.</text>
+<rect x="110" y="285" width="455" height="115" rx="14" class="box"/><text x="135" y="315" class="k">INPUT SCHEMA</text><text x="135" y="345" class="b">invoice_id: verified stable identifier</text><text x="135" y="373" class="b">approval_token: user-confirmation artifact</text>
+<rect x="635" y="285" width="455" height="115" rx="14" class="box"/><text x="660" y="315" class="k">PARAMETER PROVENANCE</text><text x="660" y="345" class="b">invoice_id must come from lookup_invoice.</text><text x="660" y="373" class="b">Never infer, invent, or reuse a stale value.</text>
+<rect x="110" y="423" width="455" height="86" rx="14" class="box"/><text x="135" y="453" class="k">SIDE EFFECT &amp; IDEMPOTENCY</text><text x="135" y="483" class="b">One approval per idempotency key.</text>
+<rect x="635" y="423" width="455" height="86" rx="14" class="box"/><text x="660" y="453" class="k">SUCCESS RESULT</text><text x="660" y="483" class="b">status, approved_at, audit_id</text>
+<rect x="110" y="532" width="980" height="70" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/><text x="135" y="560" class="k" fill="#c2410c">ERROR CONTRACT</text><text x="300" y="560" class="b">category · retryable · operation_status · safe_message · support_reference</text><text x="135" y="587" class="b">A timeout must distinguish “not executed” from “execution status unknown.”</text>
+</g>
+<text x="75" y="670" class="b" fill="#0f766e">The model sees the interface, not your implementation. Make the interface carry the missing operational knowledge.</text>
+</svg>

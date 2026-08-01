@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 770" role="img" aria-labelledby="t d">
+<title id="t">Claude Code configuration decision tree</title><desc id="d">Decision tree for choosing CLAUDE.md, rules, skills, hooks, permissions, or plan mode.</desc>
+<defs><style>.t{font:700 28px Inter,Arial}.h{font:700 18px Inter,Arial}.b{font:400 15px Inter,Arial;fill:#334155}.q{fill:#ecfeff;stroke:#0f766e;stroke-width:3}.a{fill:white;stroke:#4f46e5;stroke-width:2.5}.hard{fill:#fff7ed;stroke:#ea580c;stroke-width:2.5}</style></defs>
+<rect width="1200" height="770" rx="28" fill="#f8fafc"/>
+<text x="55" y="55" class="t" fill="#0f172a">Choose the mechanism by enforcement semantics</text>
+<rect x="390" y="90" width="420" height="75" rx="18" class="q"/><text x="465" y="135" class="h">What kind of requirement is it?</text>
+<path d="M600 165v60M600 225H210M600 225h390" stroke="#64748b" stroke-width="3" fill="none"/>
+<rect x="70" y="245" width="280" height="82" rx="16" class="a"/><text x="125" y="280" class="h">Persistent knowledge</text><text x="105" y="307" class="b">Should be present every session</text>
+<rect x="460" y="245" width="280" height="82" rx="16" class="a"/><text x="525" y="280" class="h">Reusable procedure</text><text x="495" y="307" class="b">Long, multi-step, on demand</text>
+<rect x="850" y="245" width="280" height="82" rx="16" class="hard"/><text x="915" y="280" class="h">Hard guarantee</text><text x="885" y="307" class="b">Must not depend on compliance</text>
+<path d="M210 327v70M600 327v70M990 327v70" stroke="#64748b" stroke-width="3"/>
+<rect x="65" y="400" width="290" height="95" rx="16" class="a"/><text x="135" y="438" class="h">CLAUDE.md</text><text x="100" y="468" class="b">Project facts, commands, conventions</text>
+<rect x="455" y="400" width="290" height="95" rx="16" class="a"/><text x="555" y="438" class="h">Skill</text><text x="495" y="468" class="b">Checklist or multi-step workflow</text>
+<rect x="845" y="400" width="290" height="95" rx="16" class="hard"/><text x="930" y="438" class="h">Permission / hook</text><text x="880" y="468" class="b">Deny unsafe action or automate a check</text>
+<path d="M210 495v65M990 495v65" stroke="#64748b" stroke-width="3"/>
+<rect x="65" y="565" width="290" height="95" rx="16" class="a"/><text x="130" y="603" class="h">Path-scoped rule</text><text x="100" y="633" class="b">Load only for matching files</text>
+<rect x="845" y="565" width="290" height="95" rx="16" class="hard"/><text x="935" y="603" class="h">Plan Mode</text><text x="880" y="633" class="b">Review before edits touch disk</text>
+<text x="65" y="720" class="b" fill="#0f766e">Do not use stronger prompt wording as a substitute for deterministic enforcement.</text>
+</svg>
